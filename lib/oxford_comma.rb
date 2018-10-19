@@ -4,7 +4,7 @@ def oxford_comma(array)
     last_el = array.pop
     string_array = array.join(", ")
     return "#{string_array}, and #{last_el}."
-  elsif array > 1
+  elsif array.length > 1
     return array.join(" and ")
   else
     return array.to_s
